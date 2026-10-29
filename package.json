@@ -1,0 +1,31 @@
+{
+  "name": "weather-app",
+  "version": "1.0.0",
+  "description": "",
+  "homepage": "https://github.com/vlador4ik/weather-app#readme",
+  "bugs": {
+    "url": "https://github.com/vlador4ik/weather-app/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/vlador4ik/weather-app.git"
+  },
+  "license": "ISC",
+  "author": "",
+  "type": "commonjs",
+  "scripts": {
+    "dev:client": "npm run dev --workspace=apps/client",
+    "dev:server": "npm run dev --workspace=apps/server",
+    "start:server": "npm run start --workspace=apps/server",
+    "typecheck": "npm run typecheck --workspaces",
+    "build": "npm run build --workspaces",
+    "build:client": "npm run build --workspace=apps/client",
+    "build:server": "npm run build --workspace=apps/server",
+    "lint": "npm run lint --workspace=apps/client"
+  },
+  "private": true,
+  "workspaces": [
+    "apps/client",
+    "apps/server"
+  ]
+}
